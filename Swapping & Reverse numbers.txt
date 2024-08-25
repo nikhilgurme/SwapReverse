@@ -1,0 +1,50 @@
+1) Program to Swap 2 numbers using third variable :
+
+class Swapping {
+      public static void main(String args[]){
+      int a = 15,b=25;
+      System.out.println("Before swapping no.s are .."+a+" "+b);
+      
+      int t = a ; // Logic - using third variable
+      a = b;
+      b = t;
+      
+      System.out.println("After Swapping no.s are .. "+a+" "+b);
+      
+      }
+}
+
+
+2) Program to Swap 2 numbers using * and / without using third variable :
+
+class Swapping {
+      public static void main(String args[]){
+      int a = 10,b=40;
+      System.out.println("Before swapping two no.s are .."+a+ " "+b);
+      a = a*b; // Logic - use * and / without using third variable
+      b = a/b; // here a & b values should not be zero
+      a = a/b;
+      System.out.println("After swapping two no.s are ..."+a+" "+b);
+      }
+}
+
+
+3) Program to Reverse a number using algorithm :
+
+   import java.util.*;
+       class ReverseNumber {
+       public static void main(String args[]){
+       Scanner sc = new Scanner(System.in);
+       System.out.println("Enter a number :");
+       int num = sc.nextInt();
+       int rev = 0;
+       // using algorithm
+       while(num!=0) // 1234
+       {
+           rev = rev * 10 + num %10; // 4
+           num = num / 10; // 123
+       }
+       System.out.println("Reverse number is :" +rev);
+       }
+       }
+
